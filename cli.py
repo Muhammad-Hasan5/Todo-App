@@ -26,7 +26,8 @@ while True:
         todos = functions.get_todos()
 
         for index, items in enumerate(todos):
-            print(f"{index + 1}-{items.strip('\n')}")
+            items = items.strip('\n')
+            print(f"{index + 1}-{items}")
 
     elif user_action.startswith('edit'):
         try:
